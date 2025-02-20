@@ -2,31 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Tailwind | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Insights Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styletail.css">
 </head>
-<body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class="flex justify-center items-center h-screen m-0 bg-[#0a0c1b] text-white font-inter" id="bod">
+  <section class="flex flex-wrap items-center justify-center max-w-[1440px] w-[83%] bg-[#1c1938] rounded-lg overflow-hidden flex-row-reverse md:flex flex-wrap items-center justify-center w-[83%]" id ="section">
+    <div class="max-w-full h-full inset-0 bg-purple-600  opacity-60" id="image">
+      <img src="images/image-header-desktop.jpg" alt="Team working" class="w-full h-full object-cover mix-blend-multiply">
+    </div>
+    <div class="flex-1 p-12 text-left text-white/75" id="content">
+      <h2 class="text-[2rem] font-bold text-white w-[80%] sm: text-[1.5rem] w-[100%]" id="title">
+        Get <span class="text-[#aa5cdb]">insights</span> that help your business grow.
+      </h2>
+      <p class="text-base font-lexend font-normal w-[80%] pt-3 sm: w-[100%]" id="text">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+      </p>
+      <div class="flex justify-between w-[80%] mt-10" id="stats">
+        <div>
+          <h4 class="text-xl font-bold text-white">10k+</h4>
+          <p class="text-sm text-white/60 font-lexend">Companies</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold text-white">314</h4>
+          <p class="text-sm text-white/60 font-lexend">Templates</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold text-white">12M+</h4>
+          <p class="text-sm text-white/60 font-lexend">Queries</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
