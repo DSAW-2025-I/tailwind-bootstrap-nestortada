@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.custom-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    width: 83%;
+    background: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content-container {
+    flex: 1;
+    padding: 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: left;
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    width: 80%;
+}
+
+h2 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.text {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    width: 85%;
+    padding-top: 3%;
+    width: 80%;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 15%;
+}
+
+.stats h4 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.stats p {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.img-container {
+  flex: 1;
+  max-width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%);
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: hsl(277, 64%, 61%);
+    mix-blend-mode: multiply;
+}
+
+
+@media (max-width: 1024px) {
+    .content-container {
+        padding: 40px;
+    }
+
+    .stats {
+        width: 100%;
+        justify-content: center;
+    }
+    .img-container {
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        display: block;
+        text-align: center;
+    }
+    
+    .custom-section {
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 0;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: auto;
+    }
+    
+
+    h2, .text, .stats p, .stats h4 {
+        text-align: center;
+        width: 100%;
+    }
+    h2{
+      font-size: 1.5rem;
+    }
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .img-container {
+        width: 100%;
+    }
+    
+    .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
